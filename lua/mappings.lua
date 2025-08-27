@@ -10,4 +10,7 @@ vim.keymap.set("n", "<C-b>", function()
   require("nvim-tree.api").tree.toggle()
 end, { desc = "Toggle NvimTree", noremap = true, silent = true })
 
+vim.keymap.set("n", "<C-p>", function()
+  require("telescope").extensions.project.project{}
+end, { desc = "Switch Project", noremap = true, silent = true })
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
