@@ -19,7 +19,14 @@ return {
       require("configs.telescope")
     end,
   },
-
+  {
+    "NeogitOrg/neogit",
+    dependencies = {
+      "nvim-lua/plenary.nvim", -- requerido por Neogit
+    },
+    config = true,
+    lazy = false, -- para cargarlo al inicio
+  },
   -- { import = "nvchad.blink.lazyspec" },
 
   -- {
