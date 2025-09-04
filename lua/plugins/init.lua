@@ -11,7 +11,15 @@ return {
     config = function()
       require "configs.lspconfig"
     end,
-  }
+  },
+  {
+    "nvim-telescope/telescope-project.nvim",
+    dependencies = {"nvim-telescope/telescope.nvim"},
+    config = function()
+      require("configs.telescope")
+    end,
+  },
+
   -- { import = "nvchad.blink.lazyspec" },
 
   -- {

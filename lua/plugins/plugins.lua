@@ -28,14 +28,14 @@ local plugins = {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
-      ensure_installed = { "go", "gomod", "gosum" },
+      ensure_installed = { "go", "gomod", "gosum","markdown" },
     },
   },
   {
     "nvim-telescope/telescope-project.nvim",
     dependencies = { "nvim-telescope/telescope.nvim" },
       config = function()
-      require("telescope").load_extension("project")
+      require("configs.telescope")
       end,
   },
 }
