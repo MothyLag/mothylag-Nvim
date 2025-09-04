@@ -5,6 +5,7 @@ require "nvchad.mappings"
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
+map("n", "<leader>gg", ":Neogit<CR>", { desc = "Neogit Open" })
 map("i", "jk", "<ESC>")
 vim.keymap.set("n", "<C-b>", function()
   require("nvim-tree.api").tree.toggle()
