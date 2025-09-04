@@ -28,15 +28,25 @@ local plugins = {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
-      ensure_installed = { "go", "gomod", "gosum" },
+      ensure_installed = { "go", "gomod", "gosum","markdown" },
     },
   },
   {
     "nvim-telescope/telescope-project.nvim",
     dependencies = { "nvim-telescope/telescope.nvim" },
       config = function()
-      require("telescope").load_extension("project")
+      require("configs.telescope")
       end,
   },
+  {
+    "NeogitOrg/neogit",
+    dependencies = {
+      "nvim-lua/plenary.nvim", -- requerido por Neogit
+    },
+    config = true,
+    lazy = false, -- para cargarlo al inicio
+  },
+
+
 }
 return plugins
