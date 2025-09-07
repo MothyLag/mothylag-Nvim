@@ -46,7 +46,14 @@ local plugins = {
     config = true,
     lazy = false, -- para cargarlo al inicio
   },
-
+  {
+    "chipsenkbeil/distant.nvim",
+    branch = "v0.3",
+    config = function()
+      require("distant"):setup()
+    end,
+    lazy = false,
+  },
 
 }
 return plugins
