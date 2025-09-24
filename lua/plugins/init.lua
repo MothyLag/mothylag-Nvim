@@ -12,21 +12,8 @@ return {
       require "configs.lspconfig"
     end,
   },
-  {
-    "nvim-telescope/telescope-project.nvim",
-    dependencies = {"nvim-telescope/telescope.nvim"},
-    config = function()
-      require("configs.telescope")
-    end,
-  },
-  {
-    "NeogitOrg/neogit",
-    dependencies = {
-      "nvim-lua/plenary.nvim", -- requerido por Neogit
-    },
-    config = true,
-    lazy = false, -- para cargarlo al inicio
-  },
+
+  -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
   -- {
