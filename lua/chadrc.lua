@@ -22,5 +22,5 @@ M.ui = {
     lazyload = false
   }
 }
-
+vim.opt.guifont = "FiraCode Font:h14"
 return M
