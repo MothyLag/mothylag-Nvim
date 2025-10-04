@@ -19,7 +19,8 @@ M.base46 = {
 M.nvdash = { load_on_startup = true }
 M.ui = {
   tabufline = {
-    lazyload = false
+    lazyload = false,
+    transparency = true
   }
 }
 vim.opt.guifont = "FiraCode Font:h14"
