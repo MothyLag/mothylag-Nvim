@@ -2,7 +2,7 @@
 -- https://github.com/NvChad/ui/blob/v3.0/lua/nvconfig.lua
 -- Please read that file to know all available options :( 
 require("customs.mappings")
-require("customs.lsps")
+-- require("customs.lsps")
 ---@class ChadrcConfig
 local M = {}
 
